@@ -26,7 +26,7 @@ jobs:
         sudo apt update -y
         sudo apt install bc cpio git tar curl lz4 -y
         
-        bash imgtool/img/img.sh
+        bash $(pwd)/img/img.sh
       
     
     - name: Upload AnyKernel3
