@@ -16,13 +16,18 @@ jobs:
 
     
 
-    - name: Install dependencies
-      run: make
-
+        
+    - name: Prepare dependencies
+      run: |
+        sudo apt update -y
+        sudo apt install bc cpio flex bison aptitude git python-is-python3 tar perl curl lz4 -y
+        sudo aptitude install libssl-dev -y
+        bash $(pwd)/build_kernel.sh
+      working-directory: imj
     
     - name: Upload AnyKernel3
       uses: actions/upload-artifact@v4
       with:
         name: ImgTool
-        path: imjtool/*
+        path: imj/*
         compression-level: 9
