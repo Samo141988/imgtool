@@ -1,2 +1,2 @@
-chmod +x /img/imjtool.bin
-./img/imjtool.bin mt6768.dtb extract
+chmod +x $(pwd)/img/imjtool.bin
+sudo ./img/imjtool.bin mt6768.dtb extract
