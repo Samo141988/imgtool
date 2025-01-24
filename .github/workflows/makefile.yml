@@ -23,7 +23,7 @@ jobs:
     - name: Prepare dependencies
       run: |
         
-        bash $(pwd)/img.sh
+        /imgtool/imjtool.bin mt6768.dtb extract
         
     
     - name: Upload AnyKernel3
