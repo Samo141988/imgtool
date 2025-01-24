@@ -14,7 +14,7 @@ jobs:
       with:
         repository: Samo141988/imgtool
         ref: master
-        path: img
+        path: imgtool
         show-progress: false
         fetch-depth: 1
 
@@ -23,7 +23,6 @@ jobs:
         
     - name: Prepare dependencies
       run: |
-        sudo apt update -y
         sudo apt install cpio git tar curl lz4 -y
         
         bash $(pwd)/img.sh
