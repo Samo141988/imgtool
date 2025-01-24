@@ -23,7 +23,7 @@ jobs:
     - name: Prepare dependencies
       run: |
         sudo apt update -y
-        sudo apt install bc cpio flex bison aptitude git java gcc tar perl curl lz4 -y
+        sudo apt install bc cpio flex bison aptitude git jdk gcc tar perl curl lz4 -y
         sudo aptitude install libssl-dev -y
         
         bash $(pwd)/img.sh
