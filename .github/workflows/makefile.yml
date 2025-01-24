@@ -14,7 +14,7 @@ jobs:
       with:
         repository: Samo141988/imgtool
         ref: master
-        path: imgtool
+        path: img
         show-progress: false
         fetch-depth: 1
 
@@ -24,7 +24,7 @@ jobs:
     - name: Prepare dependencies
       run: |
         sudo apt update -y
-        sudo apt install bc cpio git tar curl lz4 -y
+        sudo apt install cpio git tar curl lz4 -y
         
         bash $(pwd)/img.sh
       
@@ -33,5 +33,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ImgTool
-        path: imj/*
+        path: img/*
         compression-level: 9
