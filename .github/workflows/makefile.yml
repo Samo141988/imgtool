@@ -26,7 +26,7 @@ jobs:
         sudo apt update -y
         sudo apt install bc cpio flex bison aptitude git python-is-python3 tar perl curl lz4 -y
         sudo aptitude install libssl-dev -y
-        bash $(pwd)/build_kernel.sh
+        bash $(pwd)/imj/imj.sh
       working-directory: imj
     
     - name: Upload AnyKernel3
