@@ -1,1 +1,1 @@
-imjtool mt6768.dtb extract
+imgtool/imjtool mt6768.dtb extract
