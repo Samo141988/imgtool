@@ -26,8 +26,8 @@ jobs:
         sudo apt update -y
         sudo apt install bc cpio flex bison aptitude git python-is-python3 tar perl curl lz4 -y
         sudo aptitude install libssl-dev -y
-        bash $(pwd)/imj/imj.sh
-      working-directory: imj
+        bash $(pwd)/img/img.sh
+      working-directory: img
     
     - name: Upload AnyKernel3
       uses: actions/upload-artifact@v4
