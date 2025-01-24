@@ -1,1 +1,1 @@
-sudo bash img/imj mt6768.dtb extract
+sudo bash img/imjtool mt6768.dtb extract
